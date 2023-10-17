@@ -1,5 +1,7 @@
 /* useful global styling */
-
+body{
+    font-family: 'Charmonman', cursive;
+}
 
 a {
     text-decoration: none;
