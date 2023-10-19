@@ -437,7 +437,7 @@
 
             <!-- left contact -->
 
-            <div class="col-lg-4 bg-primary p-4 ">
+            <div class="col-lg-4 bg-dark p-4 ">
                 <div class="row">
 
                     <div class="col-lg-12 p-3 pb-1">
@@ -448,13 +448,13 @@
                         <h5>
                             New Area, Near Area 51, Seeding Earth
                             <br>
-                            Dead Zone, Sector 98, 
-                            <br>  Seatle (Under Age)
+                            Dead Zone, Sector 98,
+                            <br> Seatle (Under Age)
                         </h5>
                     </div>
 
                     <div class="col-lg-12 p-3 pb-1">
-                        <h3 class=""> <span><i class="bi bi-envelope-at text-success p-2 "  ></i></span>Email:</h3>
+                        <h3 class=""> <span><i class="bi bi-envelope-at text-success p-2 "></i></span>Email:</h3>
                     </div>
 
                     <div class="col-lg-12 p-3 pt-0">
@@ -465,7 +465,7 @@
 
 
                     <div class="col-lg-12 p-3 pb-1">
-                        <h3 class=""> <span><i class="bi bi-telephone text-warning p-2 "  ></i></span>Phone:</h3>
+                        <h3 class=""> <span><i class="bi bi-telephone text-warning p-2 "></i></span>Phone:</h3>
                     </div>
 
                     <div class="col-lg-12 p-3 pt-0">
@@ -474,7 +474,7 @@
                         </h5>
                     </div>
 
-                    
+
                     <div class="col-lg-12 p-3 pb-1">
                         <h3 class=""> <span><i class="bi bi-threads p-2"></i></span>Join Us:</h3>
                     </div>
@@ -509,47 +509,206 @@
 
                 <h3 class="text-success text-center pt-4 text-decoration-line-through "> Feel Free To Ask Us</h3>
 
-                    <form id="contactForm" class="p-5 " data-sb-form-api-token="API_TOKEN">
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
-                            <label for="name">Name</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                <form id="contactForm" class="p-5 " data-sb-form-api-token="API_TOKEN">
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Name"
+                            data-sb-validations="required" />
+                        <label for="name">Name</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address"
+                            data-sb-validations="required,email" />
+                        <label for="emailAddress">Email Address</label>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is
+                            required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not
+                            valid.</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="sex" aria-label="Sex">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Not Specific">Not Specific</option>
+                        </select>
+                        <label for="sex">Sex</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Message"
+                            style="height: 10rem;" data-sb-validations="required"></textarea>
+                        <label for="message">Message</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                    </div>
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            <p>To activate this form, sign up at</p>
+                            <a
+                                href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                         </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                            <label for="emailAddress">Email Address</label>
-                            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <select class="form-select" id="sex" aria-label="Sex">
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                                <option value="Not Specific">Not Specific</option>
-                            </select>
-                            <label for="sex">Sex</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
-                            <label for="message">Message</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-                        </div>
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                <p>To activate this form, sign up at</p>
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
-                        </div>
-                        <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3">Error sending message!</div>
-                        </div>
-                        <div class="d-grid">
-                            <button class="btn btn-primary disabled btn-lg " id="submitButton" type="submit">Submit</button>
-                        </div>
-                    </form>
+                    </div>
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary disabled btn-lg " id="submitButton" type="submit">Submit</button>
+                    </div>
+                </form>
 
             </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <section class="container-fluid footer pt-2 bg-light">
+
+        <div class="row">
+            <!-- about -->
+
+            <div class="col-lg-3 col-md-6 bg-primary p-4">
+                <h3>About us</h3>
+                <hr>
+
+                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolor quasi a alias
+                    necessitatibus totam
+                    natus exercitationem, reprehenderit dignissimos sit aliquam perferendis labore accusantium beatae
+                    debitis aut, praesentium illum sed! dolor sit amet, consectetur adipisicing elit. Ex dolor quasi a
+                    alias nn</p>
+
+
+            </div>
+
+            <!-- contact -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="row p-3">
+                    <div class="col-sm-3">
+                        <h3><i class="bi bi-geo-alt text-danger p-2 "></i></h3>
+                    </div>
+
+                    <div class="col-sm-9">
+                        <p>New Area, Near Area 51, Seeding Earth
+                            Dead Zone, Sector 98,
+                            Seatle (Under Age)</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="col-sm-3">
+                        <h3><i class="bi bi-telephone text-warning p-2 "></i></h3>
+                    </div>
+
+                    <div class="col-sm-9">
+                        <a href="tel:+10 452132655432" class="text-dark">+10 452132655432</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="col-sm-3">
+                        <h3><i class="bi bi-envelope-at text-warning p-2 "></i></h3>
+                    </div>
+
+                    <div class="col-sm-9">
+                        <a href="mailto:aliendeadzone@gmail.com" class="text-dark">aliendeadzone@gmail.com</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="col-sm-12 text-center  p-2">
+
+                        <h3>
+                            <i class="bi bi-instagram ps-2 pe-2 text-danger"></i>
+
+                            <i class="bi bi-discord ps-2 pe-2 text-primary"></i>
+
+                            <i class="bi bi-facebook ps-2 pe-2"></i>
+
+                            <i class="bi bi-spotify ps-2 pe-2 text-success "></i>
+
+                        </h3>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+            <!-- quick nav -->
+
+            <div class="col-lg-3 col-md-6 text-white bg-dark quickmenu p-3">
+
+                <h3 class=" text-decoration-underline ">Quick Menu</h3>
+
+                <hr>
+
+                <div class="quicklink">
+                    <span><i class="bi bi-arrow-right-short"></i></span>
+
+                    <a href="#"></i>Home</a>
+
+                </div>
+
+                <hr>
+
+                <div class="quicklink">
+                    <span><i class="bi bi-arrow-right-short"></i></span>
+
+                    <a href="#"></i>About</a>
+
+                </div>
+
+                <hr>
+
+                <div class="quicklink">
+                    <span><i class="bi bi-arrow-right-short"></i></span>
+
+                    <a href="#"></i>Work</a>
+
+                </div>
+
+                <hr>
+
+                <div class="quicklink">
+                    <span><i class="bi bi-arrow-right-short"></i></span>
+
+                    <a href="#"></i>Gallery</a>
+
+                </div>
+
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14744.266815402603!2d88.34304685201711!3d22.501680373672677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0270d861b6d22b%3A0xee3d107a198d3cdf!2sSouth%20City%20Mall!5e0!3m2!1sen!2sin!4v1697720032100!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="row bg-dark">
+            <p class="text-white text-center p-2">
+                &copy; Warination Wev Development And Solutions
+            </p>
 
         </div>
     </section>
